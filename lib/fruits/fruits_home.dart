@@ -1,29 +1,24 @@
 
 import 'package:flutter/material.dart';
 import 'package:srilanka_organic_agricultural/home_page.dart';
-import 'package:srilanka_organic_agricultural/vegitables/cabbage/cabbage_home.dart';
-import 'package:srilanka_organic_agricultural/vegitables/carrot/carrot_home.dart';
-import 'package:srilanka_organic_agricultural/vegitables/leeks/leeks_home.dart';
-import 'package:srilanka_organic_agricultural/vegitables/pumpkin/pumpkin_home.dart';
-import 'package:srilanka_organic_agricultural/vegitables/radish/radish_home.dart';
-class VegitableHome extends StatefulWidget {
-  const VegitableHome({Key? key}) : super(key: key);
+class FruitsHome extends StatefulWidget {
+  const FruitsHome({Key? key}) : super(key: key);
 
   @override
-  _VegitableHomeState createState() => _VegitableHomeState();
+  _FruitsHomeState createState() => _FruitsHomeState();
 }
 
-class _VegitableHomeState extends State<VegitableHome> {
+class _FruitsHomeState extends State<FruitsHome> {
   @override
   Widget build(BuildContext context) {
     var deviceWidth = MediaQuery.of(context).size.width;
     return Scaffold(
         appBar: AppBar(
-          title: Text('Modals'),
+          title: Text('කාබනික පලතුරු වගාව'),
           leading: IconButton(
             icon: Icon(Icons.arrow_back,size: 27.0,),
             onPressed: (){
-             // Navigator.push(context, MaterialPageRoute(builder: (context)=>MainHome()));
+              // Navigator.push(context, MaterialPageRoute(builder: (context)=>MainHome()));
             },
           ),
           actions: [
@@ -46,11 +41,11 @@ class _VegitableHomeState extends State<VegitableHome> {
                 child: Container(
                   width: (deviceWidth - 35) / 2,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(15),
-                    image: DecorationImage(
-                      image: AssetImage('images/vegi.jpg'),
-                      fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
-                    )
+                      borderRadius: BorderRadius.circular(15),
+                      image: DecorationImage(
+                        image: AssetImage('images/vegi.jpg'),
+                        fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
+                      )
                   ),
                   child: new Card(
                     shape: RoundedRectangleBorder(
@@ -67,12 +62,12 @@ class _VegitableHomeState extends State<VegitableHome> {
                           ListTile(
 
                             title: Text(
-                              "",
+                              "Modals Theory",
                               style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,),
                               textAlign:TextAlign.center,
                             ),
                             onTap: (){
-                            //  Navigator.push(context, MaterialPageRoute(builder: (context)=>ModalsTheory()));
+                              //  Navigator.push(context, MaterialPageRoute(builder: (context)=>ModalsTheory()));
                             },
                           )
                         ],
@@ -96,7 +91,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/radish.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -133,7 +128,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>RadishHome()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>MayMightEx()));
                                   },
                                 )
                               ],
@@ -145,7 +140,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/carrot.jpg'),
                               fit: BoxFit.fill, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -182,7 +177,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>CarrotHome()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>MayHaveMightHaveEx()));
                                   },
                                 )
                               ],
@@ -194,7 +189,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/cabbage.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -232,7 +227,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   Navigator.push(context,MaterialPageRoute(builder: (context)=>CabbageHome()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MayBeMightBeEx()));
                                   },
                                 )
                               ],
@@ -244,7 +239,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/pumpking.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -283,7 +278,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>PumpkinHome()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MayHaveBeenMightHaveBeenEx()));
                                   },
                                 )
                               ],
@@ -295,7 +290,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/leeks.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -334,7 +329,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                    Navigator.push(context,MaterialPageRoute(builder: (context)=>LeeksHome()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldEx()));
                                   },
                                 )
                               ],
@@ -346,7 +341,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/dabala.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -387,7 +382,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldHaveEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldHaveEx()));
                                   },
                                 )
                               ],
@@ -399,7 +394,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/tomato.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -438,7 +433,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldBeEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldBeEx()));
                                   },
                                 )
                               ],
@@ -450,7 +445,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/okra.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -492,7 +487,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldHaveBeenEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CouldHaveBeenEx()));
                                   },
                                 )
                               ],
@@ -504,7 +499,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/cocumbers.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -543,7 +538,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   // Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldEx()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldEx()));
                                   },
                                 )
                               ],
@@ -555,7 +550,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/kekiri.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -595,7 +590,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                 //   Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldHaveEx()));
+                                    //   Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldHaveEx()));
                                   },
                                 )
                               ],
@@ -607,7 +602,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/beetroot.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -647,7 +642,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                 //   Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldBeEx()));
+                                    //   Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldBeEx()));
                                   },
                                 )
                               ],
@@ -659,7 +654,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/beans.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -701,7 +696,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   // Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldHaveBeenEx()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>ShouldHaveBeenEx()));
                                   },
                                 )
                               ],
@@ -713,7 +708,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/Mbeans.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -751,7 +746,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustEx()));
                                   },
                                 )
                               ],
@@ -763,7 +758,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/eggplant.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -804,7 +799,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   // Navigator.push(context,MaterialPageRoute(builder: (context)=>MustHaveEx()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>MustHaveEx()));
                                   },
                                 )
                               ],
@@ -816,7 +811,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/elbt.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -855,7 +850,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                       textAlign:TextAlign.center,
                                     ),
                                     onTap: (){
-                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustBeEx()));
+                                      //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustBeEx()));
                                     }
                                 )
                               ],
@@ -867,7 +862,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/tbt.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -906,7 +901,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustHaveBeenEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>MustHaveBeenEx()));
                                   },
                                 )
                               ],
@@ -918,7 +913,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/bitter.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -956,7 +951,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   // Navigator.push(context,MaterialPageRoute(builder: (context)=>CanCantEx()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>CanCantEx()));
                                   },
                                 )
                               ],
@@ -968,7 +963,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/ptol.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -1008,7 +1003,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                   // Navigator.push(context,MaterialPageRoute(builder: (context)=>CantHaveEx()));
+                                    // Navigator.push(context,MaterialPageRoute(builder: (context)=>CantHaveEx()));
                                   },
                                 )
                               ],
@@ -1020,7 +1015,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/mlm.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -1058,7 +1053,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CanBeCantBeEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CanBeCantBeEx()));
                                   },
                                 )
                               ],
@@ -1070,7 +1065,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/wtkl.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
@@ -1108,7 +1103,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                                     textAlign:TextAlign.center,
                                   ),
                                   onTap: (){
-                                  //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CantHaveBeenEx()));
+                                    //  Navigator.push(context,MaterialPageRoute(builder: (context)=>CantHaveBeenEx()));
                                   },
                                 )
                               ],
@@ -1120,7 +1115,7 @@ class _VegitableHomeState extends State<VegitableHome> {
                       Container(
                         width: (deviceWidth - 35) / 2,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15),
                             image: DecorationImage(
                               image: AssetImage('images/nokol.jpg'),
                               fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),

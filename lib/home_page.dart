@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:srilanka_organic_agricultural/fruits/fruits_home.dart';
+import 'package:srilanka_organic_agricultural/green_leaves/green_leaves_home.dart';
 import 'package:srilanka_organic_agricultural/vegitables/vegi_home.dart';
+import 'package:srilanka_organic_agricultural/yams/yams_home.dart';
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -136,7 +139,67 @@ class _HomePageState extends State<HomePage> {
                 ),
 
               ),
-              onTap: (){ Navigator.push(context, MaterialPageRoute(builder: (context)=>VegitableHome()));},
+              onTap: (){ Navigator.push(context, MaterialPageRoute(builder: (context)=>FruitsHome()));},
+            ) ,
+            SizedBox(height: 10.0,),
+            ListTile(
+              title: Container(
+                width: MediaQuery.of(context).size.width-10,
+                height: 100.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15.0),
+                    image: DecorationImage(
+                      image: AssetImage('images/yams.jpg'),
+                      fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
+                    )
+                ),
+                child: Center(
+                  child: Text('අල බෝග වගාව',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20.0,shadows: <Shadow>[
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 3.0,
+                      color: Colors.black87,
+                    ),
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 8.0,
+                      color: Colors.black87,
+                    ),
+                  ],),),
+                ),
+
+              ),
+              onTap: (){ Navigator.push(context, MaterialPageRoute(builder: (context)=>YamsHome()));},
+            ) ,
+            SizedBox(height: 10.0,),
+            ListTile(
+              title: Container(
+                width: MediaQuery.of(context).size.width-10,
+                height: 100.0,
+                decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(15.0),
+                    image: DecorationImage(
+                      image: AssetImage('images/green_leaves.jpg'),
+                      fit: BoxFit.cover, colorFilter: new ColorFilter.mode(Colors.black.withOpacity(0.6), BlendMode.dstATop),
+                    )
+                ),
+                child: Center(
+                  child: Text('පලා බෝග වගාව',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 20.0,shadows: <Shadow>[
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 3.0,
+                      color: Colors.black87,
+                    ),
+                    Shadow(
+                      offset: Offset(2.0, 2.0),
+                      blurRadius: 8.0,
+                      color: Colors.black87,
+                    ),
+                  ],),),
+                ),
+
+              ),
+              onTap: (){ Navigator.push(context, MaterialPageRoute(builder: (context)=>GreenLeavesHome()));},
             ) ,
 
           ],

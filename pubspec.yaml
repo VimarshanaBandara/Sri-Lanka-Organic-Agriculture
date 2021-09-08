@@ -48,6 +48,39 @@ flutter:
      - images/fruits.jpg
      - images/fertilizer.jpg
      - images/rice.jpg
+     - images/yams.jpg
+     - images/green_leaves.jpg
+     - images/radish.jpg
+     - images/carrot.jpg
+     - images/cabbage.jpg
+     - images/pumpking.jpg
+     - images/leeks.jpg
+     - images/dabala.jpg
+     - images/tomato.jpg
+     - images/okra.jpg
+     - images/cocumbers.jpg
+     - images/kekiri.jpg
+     - images/beetroot.jpg
+     - images/beans.jpg
+     - images/Mbeans.jpg
+     - images/eggplant.jpg
+     - images/elbt.jpg
+     - images/tbt.jpg
+     - images/bitter.jpg
+     - images/ptol.jpg
+     - images/mlm.jpg
+     - images/wtkl.jpg
+     - images/nokol.jpg
+     - images/innyams.jpg
+     - images/kriyams.jpg
+     - images/potato.jpg
+     - images/sweep_potato.jpg
+     - images/board.png
+     - images/bg1.jpg
+     - images/b1.png
+     - images/b2.png
+     - images/b3.png
+     - images/b4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
